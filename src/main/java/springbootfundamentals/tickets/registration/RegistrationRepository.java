@@ -55,7 +55,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 // Mango db
 public interface RegistrationRepository extends MongoRepository<Registration, String> {
-
+//spring data understand what action to do based on the name of the method and automatically implement it. Without using by boilerplate code
     Optional<Registration> findByTicketCode(String ticketCode);
 
     void deleteByTicketCode(String ticketCode);
