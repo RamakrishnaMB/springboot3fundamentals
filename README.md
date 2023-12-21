@@ -22,3 +22,15 @@ to run web api in java - intellij configuration
         Click "Apply" and then "OK" to close the dialog.
         Now, you should see your new Maven configuration in the dropdown menu next to the run configuration.
         Select it and click the green "Run" button to run your Spring Boot application.
+
+
+Mango db commands 
+
+1. First run the mongo db in docker : docker compose up -d
+2. once run the projects create registration post 
+eg: http://localhost:8080/registrations
+   {"productId": 801, "attendeeName": "Test RK Manngo db"}
+3. run this mongo db commands in terminal : docker exec -it tickets-mongo-1 mongosh
+4. to see the created collection use this command in terminal: show collections
+6. to view the data use this command : db.registrations.find()
+   
