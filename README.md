@@ -31,6 +31,13 @@ Mango db commands
 eg: http://localhost:8080/registrations
    {"productId": 801, "attendeeName": "Test RK Manngo db"}
 3. run this mongo db commands in terminal : docker exec -it tickets-mongo-1 mongosh
-4. to see the created collection use this command in terminal: show collections
+4. to see the created collection use this command in terminal: "show collections"
 6. to view the data use this command : db.registrations.find()
    
+To check PostgreSQL Data in Docker container
+
+1. Once you run "docker compose up -d" in terminal, check PostgrsSql container is running
+2. To enter PostgreSQL shell, use this command : docker exec -it tickets-postgres-1 psql -U pluralsight -d pluralsight
+3. In the shell use "\dt" see that table created through seed data
+4. use following queies to query data in it
+   select * from events;
