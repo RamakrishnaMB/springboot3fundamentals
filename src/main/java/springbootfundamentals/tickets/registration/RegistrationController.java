@@ -23,12 +23,12 @@ public class RegistrationController {
 //    }
 
     // mango db post
-        @PostMapping
+    @PostMapping
     public Registration create(@RequestBody @Valid Registration registration) {
-            String ticketCode = UUID.randomUUID().toString();
+        String ticketCode = UUID.randomUUID().toString();
 
-            return registrationRepository.save(new Registration(
-                    null, registration.productId(), ticketCode, registration.attendeeName()));
+        return registrationRepository.save(new Registration(
+                null, registration.productId(), ticketCode, registration.attendeeName()));
     }
 
     @GetMapping(path = "/{ticketCode}")
@@ -54,6 +54,7 @@ public class RegistrationController {
         return registrationRepository.save(new Registration(
                 existing.id(), existing.productId(), ticketCode, registration.attendeeName()));
     }
+
     @DeleteMapping(path = "/{ticketCode}")
     public void delete(@PathVariable("ticketCode") String ticketCode) {
         registrationRepository.deleteByTicketCode(ticketCode);

@@ -1,5 +1,6 @@
 package springbootfundamentals.tickets.events;
 // using postgress with JPA
+
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -35,10 +36,8 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
 
 public interface EventRepository extends JpaRepository<Event, Integer> {
 
     List<Event> findByOrganizerId(int organizerId);
 }
-

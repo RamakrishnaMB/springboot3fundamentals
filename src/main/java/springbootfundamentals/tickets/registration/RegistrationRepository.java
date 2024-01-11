@@ -1,14 +1,11 @@
 package springbootfundamentals.tickets.registration;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Repository;
+//import org.springframework.stereotype.Repository;
 
-import java.util.Map;
-import java.util.NoSuchElementException;
+
 import java.util.Optional;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicInteger;
+
 
 // In memory registration repository
 //@Repository
@@ -55,7 +52,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 // Mango db
 public interface RegistrationRepository extends MongoRepository<Registration, String> {
-//spring data understand what action to do based on the name of the method and automatically implement it. Without using by boilerplate code
+    //spring data understand what action to do based on the name of the method and automatically implement it. Without using by boilerplate code
     Optional<Registration> findByTicketCode(String ticketCode);
 
     void deleteByTicketCode(String ticketCode);

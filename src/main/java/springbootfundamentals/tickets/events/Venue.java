@@ -1,14 +1,5 @@
 package springbootfundamentals.tickets.events;
 
-//public record Venue(
-//        int id,
-//        String name,
-//        String street,
-//        String city,
-//        String country) {
-//}
-
-
 import jakarta.persistence.*;
 
 @Entity
@@ -71,3 +62,13 @@ public class Venue {
         this.country = country;
     }
 }
+
+
+//public record Venue(
+//        int id,
+//        String name,
+//        String street,
+//        String city,
+//        String country) {
+//}
+

@@ -1,6 +1,5 @@
 package springbootfundamentals.tickets.events;
 
-import java.time.LocalDate;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -78,7 +77,6 @@ public class Event {
         this.endDate = endDate;
     }
 }
-
 
 //public record Event(int id,
 //                    String name,

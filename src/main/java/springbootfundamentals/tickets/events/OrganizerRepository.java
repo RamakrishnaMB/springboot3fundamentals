@@ -1,6 +1,6 @@
 package springbootfundamentals.tickets.events;
 
-import org.springframework.stereotype.Repository;
+//import org.springframework.stereotype.Repository;
 
 import java.util.List;
 // used for in-memory

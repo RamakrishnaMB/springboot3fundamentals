@@ -1,9 +1,9 @@
 package springbootfundamentals.tickets.events;
 
-import org.springframework.stereotype.Repository;
+//import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Optional;
+//import java.util.List;
+//import java.util.Optional;
 
 //@Repository
 //public class VenueRepository {
@@ -16,6 +16,7 @@ import java.util.Optional;
 //        return venues.stream().filter(venue -> venue.id() == id).findAny();
 //    }
 //}
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface VenueRepository extends JpaRepository<Venue, Integer> {

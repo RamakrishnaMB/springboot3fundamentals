@@ -2,7 +2,6 @@ package springbootfundamentals.tickets.events;
 
 import org.springframework.stereotype.Repository;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 // in memory
@@ -24,9 +23,6 @@ import java.util.List;
 //using JPA with postgress
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     List<Product> findByEventId(int eventId);

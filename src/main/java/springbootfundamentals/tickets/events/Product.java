@@ -14,12 +14,10 @@ import java.math.BigDecimal;
 
 import jakarta.persistence.*;
 
-import java.math.BigDecimal;
 
 @Entity
 @Table(name = "products")
 public class Product {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
